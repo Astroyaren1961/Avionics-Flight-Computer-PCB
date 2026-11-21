@@ -60,16 +60,22 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.15,
+          "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.25,
+          "thermal_relief_spoke_width": 0.15
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -204,7 +210,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.25,
+        0.6
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -231,7 +241,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -241,7 +256,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -491,14 +506,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Cern_STM_PCB.kicad_pro",
+    "filename": "Avionics_Flight_Computer_PCB.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -528,7 +543,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -644,7 +659,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "Avionics Flight Computer",
     "plot_directory": "",
     "reuse_designators": true,
     "spice_current_sheet_as_root": false,
@@ -657,18 +672,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Cern_STM_PCB.kicad_sch",
-        "name": "Kök",
+        "filename": "Avionics_Flight_Computer_PCB.kicad_sch",
+        "name": "Avionics_Flight_Computer_PCB",
         "uuid": "d568fb8d-69df-4a2d-95e7-2cdbb5977a85"
       }
     ],
-    "used_designators": "U1-4,C1-5,D1,L1,#PWR1-16,R1-3,J1-4,Y1",
+    "used_designators": "U1-4,C1-15,D1-3,L1,#PWR1-26,#FLG1-3,R1-3,J1-5,Y1",
     "variants": []
   },
   "sheets": [
     [
       "d568fb8d-69df-4a2d-95e7-2cdbb5977a85",
-      "Kök"
+      "Avionics_Flight_Computer_PCB"
     ]
   ],
   "text_variables": {},
